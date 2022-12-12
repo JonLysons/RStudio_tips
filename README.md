@@ -48,8 +48,9 @@ To combine datasets by adding more dataframes by row, use `rbind`
 
 `new_datframe <- rbind(data_, data_b)`
 
+### Exporting a dateset as a .CSV
 
-
+`write.csv(NameOfDataset, "NameOfFileToBeWritten.csv")`
 
 
 
