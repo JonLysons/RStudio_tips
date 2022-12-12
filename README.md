@@ -36,7 +36,7 @@ Use `colnames(Date_Filename)` to see the column headings
 
 Use `str(Date_Filename)` to summarise the data frame
 
-Use `new_df <- select(Date_Filename, 'heading1', 'heading')`
+Use `new_df <- select(Date_Filename, 'heading1', 'heading')` To create a new dataframe based on a couple of headings
 
 ### Combing datasets into a single dateset
 
@@ -44,8 +44,12 @@ To list the dataframes use `ls()`
 
 To remove a dataframe use `rm(Data_Filename)`
 
+To combine datasets by adding more dataframes by row, use `rbind`
 
-asdf
+new_datframe <- rbind(data_, data_b)
+
+
+
 
 
 
