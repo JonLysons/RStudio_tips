@@ -46,7 +46,7 @@ To remove a dataframe use `rm(Data_Filename)`
 
 To combine datasets by adding more dataframes by row, use `rbind`
 
-new_datframe <- rbind(data_, data_b)
+`new_datframe <- rbind(data_, data_b)`
 
 
 
