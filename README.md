@@ -22,6 +22,10 @@
 
 `library(readxl)` Used to upload Excel files
 
+`library(skimr)` Used to provide summary statistics
+
+`library(janitor)` Used to clean dirty data
+
 ### Uploading a dataset
 
 To import a dataset and give it a new name use `Date_Filename <- read_csv("desktop/folder/spreadsheet.csv")`
@@ -35,6 +39,11 @@ Use `str(Date_Filename)` to summarise the data frame
 Use `new_df <- select(Date_Filename, 'heading1', 'heading')`
 
 ### Combing datasets into a single dateset
+
+To list the dataframes use `ls()`
+
+To remove a dataframe use `rm(Data_Filename)`
+
 
 
 
