@@ -77,6 +77,21 @@ New_Data_File <- Data_Filename %>%
   group_by(colunm_name) %>%
   summarise(mean_header = round(mean(colunm_name2), 2))
   ```
-
+### Create a smaller dataframe using group_by
+```
+New_Data_File <- Bata_Filename %>%
+  group_by(colunm_name) %>%
+  count(new_col, name = "number")
+  ```
+### Create aa bar chart
+```
+ggplot(data = New_Data_File) + 
+  (aes(x = colunm_name, y= number, fill = colunm_name2, width = 0.75)) +
+  geom_col(position = "dodge") +
+  labs(title = "Headline Here", x = "X Axis legend", y = "Y Axis legend") +
+  scale_fill_brewer(palette = "Set1") +
+  scale_y_continuous(breaks = c(0, 50000, 100000, 150000, 200000, 250000, 300000, 350000, 400000, 450000, 500000)) +
+  theme(axis.text.x = element_text(angle = 60, hjust =1))
+  ```
 
 
