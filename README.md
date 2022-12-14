@@ -73,9 +73,9 @@ Use `mutate`
 ### Creating the mean of a column
 
 ```
-mean_ride <- BikeRides3 %>%
-  group_by(member_casual) %>%
-  summarise(mean_ride_time = round(mean(ride_duration), 2))
+New_Data_File <- Data_Filename %>%
+  group_by(colunm_name) %>%
+  summarise(mean_header = round(mean(colunm_name2), 2))
   ```
 
 
