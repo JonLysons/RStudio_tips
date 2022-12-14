@@ -42,6 +42,8 @@ Use `new_df <- select(Data_Filename, 'heading1', 'heading')` To create a new dat
 
 Use `as_tibble(Data_Filename)` returns top 10 rows in a neat table
 
+Use `View(Data_Filename)` to view the dataset in a new window: note the cap V.
+
 ### Combing datasets into a single dateset
 
 To list the dataframes use `ls()`
