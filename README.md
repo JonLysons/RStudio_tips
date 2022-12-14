@@ -64,6 +64,9 @@ To combine datasets by adding more dataframes by row, use `rbind`
 
 `New_Data_Filename <- cbind(Data_Filename, newColumn)` Use the `cbind` to add a new column
 
+### Change attributes of a column
+
+Use `mutate`
 
 
 
