@@ -70,9 +70,13 @@ To combine datasets by adding more dataframes by row, use `rbind`
 
 Use `mutate`
 
+### Creating the mean of a column
 
-
-
+```
+mean_ride <- BikeRides3 %>%
+  group_by(member_casual) %>%
+  summarise(mean_ride_time = round(mean(ride_duration), 2))
+  ```
 
 
 
