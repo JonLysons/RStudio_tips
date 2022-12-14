@@ -26,17 +26,21 @@
 
 `library(janitor)` Used to clean dirty data
 
+`library(ggplot2)` Used to create graphs
+
 ### Uploading a dataset
 
-To import a dataset and give it a new name use `Date_Filename <- read_csv("desktop/folder/spreadsheet.csv")`
+To import a dataset and give it a new name use `Data_Filename <- read_csv("desktop/folder/spreadsheet.csv")`
 
-Use `head(Date_Filename)` to see key info about the data file
+Use `head(Data_Filename)` to see key info about the data file
 
 Use `colnames(Date_Filename)` to see the column headings
 
 Use `str(Date_Filename)` to summarise the data frame
 
-Use `new_df <- select(Date_Filename, 'heading1', 'heading')` To create a new dataframe based on a couple of headings
+Use `new_df <- select(Data_Filename, 'heading1', 'heading')` To create a new dataframe based on a couple of headings
+
+Use `as_tibble(Data_Filename)` returns top 10 rows in a neat table
 
 ### Combing datasets into a single dateset
 
@@ -51,6 +55,18 @@ To combine datasets by adding more dataframes by row, use `rbind`
 ### Exporting a dateset as a .CSV
 
 `write.csv(NameOfDataset, "NameOfFileToBeWritten.csv")`
+
+### Adding and changing column heads
+
+`Data_Filename$newColumn` Use the `$` to add a new column
+
+`Data_Filename['newColumn']` Use the `[]` to add a new column
+
+`New_Data_Filename <- cbind(Data_Filename, newColumn)` Use the `cbind` to add a new column
+
+
+
+
 
 
 
