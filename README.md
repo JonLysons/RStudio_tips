@@ -83,7 +83,7 @@ New_Data_File <- Bata_Filename %>%
   group_by(colunm_name) %>%
   count(new_col, name = "number")
   ```
-### Create aa bar chart
+### Create a bar chart
 ```
 ggplot(data = New_Data_File) + 
   (aes(x = colunm_name, y= number, fill = colunm_name2, width = 0.75)) +
